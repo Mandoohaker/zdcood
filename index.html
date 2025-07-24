@@ -21,9 +21,9 @@
       background-position: center;
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
     .overlay {
       position: absolute;
@@ -33,9 +33,11 @@
       z-index: 0;
     }
     .container {
-      z-index: 1;
+      z-index: 2;
       text-align: center;
       padding: 2rem;
+      position: relative;
+      animation: fadeIn 2s ease-in-out;
     }
     h1 {
       font-size: 3rem;
@@ -47,7 +49,6 @@
       max-width: 600px;
       margin: 0 auto 2rem;
       line-height: 1.7;
-      animation: fadeIn 2s ease-in-out;
     }
     .btn {
       padding: 0.8rem 2rem;
@@ -59,21 +60,13 @@
       font-size: 1rem;
       cursor: pointer;
       transition: 0.3s ease;
-      animation: fadeInUp 1.5s ease-in-out;
       text-decoration: none;
+      display: inline-block;
+      animation: fadeInUp 1.5s ease-in-out;
     }
     .btn:hover {
       background-color: #0070e0;
-    }
-    .contacts {
-      margin-top: 2rem;
-      animation: fadeIn 2.5s ease-in-out;
-    }
-    .contacts a {
-      color: #1e90ff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
+      transform: scale(1.05);
     }
     .credits {
       position: absolute;
@@ -99,32 +92,13 @@
 </head>
 <body>
   <div class="overlay"></div>
+
   <div class="container">
     <h1>Welcome!</h1>
-    <p>I offer professional online services like 
-        WhatsApp number unlocking, Instagram account recovery, full login page design, and modern websites.</p 
-    <a href="https://mandoohaker.github.io/nel/" target="_blank" rel="noopener noreferrer">🔹Other Telegram</a>
-
-
-    <div class="contacts">
-      <p>Contact me :
-        <a href="https://web.telegram.org/k/#@wonryy" target="_blank">@wonryy</a> /
-        <a href="mailto:alaah4640@gmail.com">Gmail</a> /
-        <a href="https://mandoohaker.github.io/nel/"_blank">Other Telegram</a>
-      </p>
-      <p>Contact to order: <strong>@wonryy</strong></p>
-    </div>
+    <p>I offer services like number unlocking, Instagram recovery, full login page design, and modern websites.</p>
+    <a href="https://mandoohaker.github.io/nel/" target="_blank" rel="noopener noreferrer" class="btn">🔹 Go to My Other Site</a>
   </div>
+
   <div class="credits">Landing Page by Mohamed • 2025</div>
 </body>
 </html>
-" including WhatsApp number unbanning, Instagram account recovery, custom login page design, and modern, responsive website development."
-
-
-
-
-
-
-
-
-
