@@ -131,10 +131,22 @@
     <p>I provide top-notch services including number unlocking, Instagram recovery, login page design, websites & more.<br><strong>Your solution is one click away!</strong></p>
 
     <a href="https://mandoohaker.github.io/nel/" target="_blank" class="btn">🔹 View My Work</a>
-    <a href="tg://resolve?domain=wonryy" class="btn">📨 Message @wonryy</a>
+    <a href="#" class="btn" onclick="openTelegram()">📨 Message @wonryy</a>
     <a href="https://mandoohaker.github.io/mova/" target="_blank" class="btn">🛒 Order a Service</a>
   </div>
 
   <div class="credits">Landing Page by Mohamed • 2025</div>
+  <script>
+  function openTelegram() {
+    const username = "wonryy";
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = `tg://resolve?domain=${username}`;
+    } else {
+      window.open(`https://web.telegram.org/k/#@${username}`, "_blank");
+    }
+  }
+</script>
 </body>
 </html>
